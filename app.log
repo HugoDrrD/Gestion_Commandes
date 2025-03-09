@@ -1,0 +1,912 @@
+2025-01-27 14:08:20,906 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-27 14:08:20,907 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-27 14:08:20,907 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-27 14:08:20,907 - DEBUG - Compression method 0
+2025-01-27 14:08:20,907 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-27 14:08:20,907 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-27 14:08:20,908 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-27 14:08:20,908 - DEBUG - STREAM b'tIME' 481 7
+2025-01-27 14:08:20,908 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-27 14:08:20,908 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-27 14:08:20,908 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-27 14:08:21,517 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-27 14:08:21,517 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 14:08:27,554 - DEBUG - Starting new HTTPS connection (1): api.ipify.org:443
+2025-01-27 14:08:27,705 - DEBUG - https://api.ipify.org:443 "GET / HTTP/1.1" 200 12
+2025-01-27 14:08:50,771 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:08:50,797 - INFO - 192.168.0.163 - - [27/Jan/2025 14:08:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:08:52,586 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:08:52,601 - INFO - 192.168.0.163 - - [27/Jan/2025 14:08:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:08:53,599 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:08:53,599 - INFO - 192.168.0.163 - - [27/Jan/2025 14:08:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:11:07,644 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-27 14:11:07,644 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-27 14:11:07,644 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-27 14:11:07,644 - DEBUG - Compression method 0
+2025-01-27 14:11:07,644 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-27 14:11:07,644 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-27 14:11:07,644 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-27 14:11:07,644 - DEBUG - STREAM b'tIME' 481 7
+2025-01-27 14:11:07,644 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-27 14:11:07,644 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-27 14:11:07,644 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-27 14:11:07,950 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-27 14:11:07,950 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 14:11:17,876 - DEBUG - Starting new HTTPS connection (1): api.ipify.org:443
+2025-01-27 14:11:18,315 - DEBUG - https://api.ipify.org:443 "GET / HTTP/1.1" 200 12
+2025-01-27 14:11:47,834 - DEBUG - Starting new HTTPS connection (1): api.ipify.org:443
+2025-01-27 14:11:48,026 - DEBUG - https://api.ipify.org:443 "GET / HTTP/1.1" 200 12
+2025-01-27 14:11:54,690 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:11:54,690 - INFO - 192.168.0.163 - - [27/Jan/2025 14:11:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:11:56,959 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:11:56,961 - INFO - 192.168.0.163 - - [27/Jan/2025 14:11:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:11:57,652 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:11:57,654 - INFO - 192.168.0.163 - - [27/Jan/2025 14:11:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:12:21,752 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:12:21,752 - INFO - 192.168.0.159 - - [27/Jan/2025 14:12:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:12:22,002 - INFO - 192.168.0.159 - - [27/Jan/2025 14:12:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-27 14:12:31,741 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:12:31,743 - INFO - 192.168.0.159 - - [27/Jan/2025 14:12:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:12:53,711 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-27 14:12:53,712 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-27 14:12:53,712 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-27 14:12:53,713 - DEBUG - Compression method 0
+2025-01-27 14:12:53,713 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-27 14:12:53,713 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-27 14:12:53,713 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-27 14:12:53,713 - DEBUG - STREAM b'tIME' 481 7
+2025-01-27 14:12:53,713 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-27 14:12:53,713 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-27 14:12:53,713 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-27 14:12:54,021 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-27 14:12:54,021 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 14:13:09,401 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:13:09,401 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:13:11,130 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:13:11,130 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:13:12,046 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 403, in index
+    return render_template('templates/edit_order.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HugoDrD\Desktop\Fin\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/edit_order.html
+2025-01-27 14:13:12,046 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-27 14:13:23,316 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-27 14:13:23,316 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-27 14:13:23,316 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-27 14:13:23,316 - DEBUG - Compression method 0
+2025-01-27 14:13:23,317 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-27 14:13:23,317 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-27 14:13:23,317 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-27 14:13:23,317 - DEBUG - STREAM b'tIME' 481 7
+2025-01-27 14:13:23,317 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-27 14:13:23,317 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-27 14:13:23,317 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-27 14:13:23,616 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-27 14:13:23,616 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 14:13:24,635 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:24] "GET / HTTP/1.1" 200 -
+2025-01-27 14:13:24,699 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:24] "GET /socket.io/?EIO=4&transport=polling&t=PIdvItV HTTP/1.1" 200 -
+2025-01-27 14:13:24,733 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:24] "POST /socket.io/?EIO=4&transport=polling&t=PIdvIty&sid=1PT0FOybursfynh1AAAA HTTP/1.1" 200 -
+2025-01-27 14:13:24,745 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:24] "GET /socket.io/?EIO=4&transport=polling&t=PIdvIu5&sid=1PT0FOybursfynh1AAAA HTTP/1.1" 200 -
+2025-01-27 14:13:24,764 - INFO - 192.168.0.163 - - [27/Jan/2025 14:13:24] "GET /socket.io/?EIO=4&transport=polling&t=PIdvIua&sid=1PT0FOybursfynh1AAAA HTTP/1.1" 200 -
+2025-01-28 09:25:08,178 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-28 09:25:08,178 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-28 09:25:08,178 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-28 09:25:08,178 - DEBUG - Compression method 0
+2025-01-28 09:25:08,180 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-28 09:25:08,180 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-28 09:25:08,180 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-28 09:25:08,180 - DEBUG - STREAM b'tIME' 481 7
+2025-01-28 09:25:08,180 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-28 09:25:08,181 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-28 09:25:08,181 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-28 09:25:08,841 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-28 09:25:08,841 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 10:34:03,139 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 10:34:03,139 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 10:34:03,139 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 10:34:03,141 - DEBUG - Compression method 0
+2025-01-29 10:34:03,141 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 10:34:03,141 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 10:34:03,141 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 10:34:03,142 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 10:34:03,142 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 10:34:03,142 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 10:34:03,142 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 10:34:03,687 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 10:34:03,687 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 10:34:47,213 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 10:34:47,214 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 10:34:47,214 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 10:34:47,214 - DEBUG - Compression method 0
+2025-01-29 10:34:47,214 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 10:34:47,214 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 10:34:47,214 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 10:34:47,214 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 10:34:47,214 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 10:34:47,214 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 10:34:47,215 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 10:34:47,535 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 10:34:47,535 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 10:35:56,623 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 10:35:56,624 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 10:35:56,624 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 10:35:56,624 - DEBUG - Compression method 0
+2025-01-29 10:35:56,624 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 10:35:56,625 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 10:35:56,625 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 10:35:56,625 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 10:35:56,625 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 10:35:56,625 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 10:35:56,625 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 10:35:56,940 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 10:35:56,940 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 14:48:49,517 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 14:48:49,517 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 14:48:49,517 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 14:48:49,517 - DEBUG - Compression method 0
+2025-01-29 14:48:49,517 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 14:48:49,517 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 14:48:49,517 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 14:48:49,517 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 14:48:49,517 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 14:48:49,517 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 14:48:49,517 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 14:48:49,973 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 14:48:49,973 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 14:51:25,324 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 14:51:25,324 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 14:51:25,324 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 14:51:25,324 - DEBUG - Compression method 0
+2025-01-29 14:51:25,324 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 14:51:25,324 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 14:51:25,324 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 14:51:25,324 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 14:51:25,326 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 14:51:25,326 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 14:51:25,326 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 14:51:25,674 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 14:51:25,674 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 14:55:58,201 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 14:55:58,201 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 14:55:58,201 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 14:55:58,201 - DEBUG - Compression method 0
+2025-01-29 14:55:58,201 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 14:55:58,201 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 14:55:58,201 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 14:55:58,201 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 14:55:58,203 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 14:55:58,203 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 14:55:58,203 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 14:55:58,508 - ERROR - Error: list index out of range
+2025-01-29 14:55:58,509 - ERROR - Traceback (most recent call last):
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 838, in <module>
+    app = GestionCommandes()
+          ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 346, in __init__
+    self.load_cart()
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 616, in load_cart
+    self.update_cart_display()
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 757, in update_cart_display
+    marque = element[4]  # Remove conditional check since we now store all fields
+             ~~~~~~~^^^
+IndexError: list index out of range
+
+2025-01-29 14:57:56,910 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 14:57:56,910 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 14:57:56,910 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 14:57:56,910 - DEBUG - Compression method 0
+2025-01-29 14:57:56,910 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 14:57:56,910 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 14:57:56,910 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 14:57:56,910 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 14:57:56,910 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 14:57:56,910 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 14:57:56,910 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 14:57:57,246 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 14:57:57,248 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 15:03:59,301 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 15:03:59,301 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 15:03:59,301 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 15:03:59,301 - DEBUG - Compression method 0
+2025-01-29 15:03:59,301 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 15:03:59,301 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 15:03:59,301 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 15:03:59,301 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 15:03:59,301 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 15:03:59,301 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 15:03:59,301 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 15:03:59,563 - ERROR - Error: 'GestionCommandes' object has no attribute 'entry_type'
+2025-01-29 15:03:59,564 - ERROR - Traceback (most recent call last):
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 849, in <module>
+    app = GestionCommandes()
+          ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 345, in __init__
+    self.create_gui()
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 465, in create_gui
+    self.setup_grid_layout()
+  File "c:\Users\HugoDrD\Desktop\Fin\main.py", line 590, in setup_grid_layout
+    self.entry_type.grid(row=1, column=0, columnspan=3, sticky='ew', padx=5)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'GestionCommandes' object has no attribute 'entry_type'
+
+2025-01-29 15:05:26,673 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 15:05:26,673 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 15:05:26,673 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 15:05:26,673 - DEBUG - Compression method 0
+2025-01-29 15:05:26,673 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 15:05:26,673 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 15:05:26,676 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 15:05:26,676 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 15:05:26,676 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 15:05:26,676 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 15:05:26,676 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 15:05:27,018 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 15:05:27,018 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 15:11:21,834 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 15:11:21,834 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 15:11:21,834 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 15:11:21,834 - DEBUG - Compression method 0
+2025-01-29 15:11:21,834 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 15:11:21,834 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 15:11:21,834 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 15:11:21,834 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 15:11:21,834 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 15:11:21,834 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 15:11:21,834 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 15:11:22,184 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 15:11:22,184 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 15:16:45,452 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 15:16:45,452 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 15:16:45,452 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 15:16:45,452 - DEBUG - Compression method 0
+2025-01-29 15:16:45,452 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 15:16:45,452 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 15:16:45,452 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 15:16:45,452 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 15:16:45,452 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 15:16:45,452 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 15:16:45,452 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 15:16:45,795 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 15:16:45,795 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 15:20:56,331 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 15:20:56,331 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 15:20:56,331 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 15:20:56,331 - DEBUG - Compression method 0
+2025-01-29 15:20:56,331 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 15:20:56,331 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 15:20:56,331 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 15:20:56,331 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 15:20:56,331 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 15:20:56,331 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 15:20:56,331 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 15:20:56,688 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 15:20:56,688 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 15:25:58,503 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 15:25:58,503 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 15:25:58,503 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 15:25:58,503 - DEBUG - Compression method 0
+2025-01-29 15:25:58,503 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 15:25:58,503 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 15:25:58,503 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 15:25:58,503 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 15:25:58,503 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 15:25:58,503 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 15:25:58,503 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 15:25:58,824 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 15:25:58,824 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-29 15:28:08,889 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-29 15:28:08,889 - DEBUG - STREAM b'iCCP' 41 389
+2025-01-29 15:28:08,889 - DEBUG - iCCP profile name b'ICC profile'
+2025-01-29 15:28:08,891 - DEBUG - Compression method 0
+2025-01-29 15:28:08,891 - DEBUG - STREAM b'bKGD' 442 6
+2025-01-29 15:28:08,891 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-01-29 15:28:08,891 - DEBUG - STREAM b'pHYs' 460 9
+2025-01-29 15:28:08,891 - DEBUG - STREAM b'tIME' 481 7
+2025-01-29 15:28:08,891 - DEBUG - b'tIME' 481 7 (unknown)
+2025-01-29 15:28:08,891 - DEBUG - STREAM b'tEXt' 500 25
+2025-01-29 15:28:08,891 - DEBUG - STREAM b'IDAT' 537 8192
+2025-01-29 15:28:09,413 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.159:5000
+2025-01-29 15:28:09,413 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-03 10:15:03,701 - DEBUG - STREAM b'IHDR' 16 13
+2025-02-03 10:15:03,702 - DEBUG - STREAM b'iCCP' 41 389
+2025-02-03 10:15:03,703 - DEBUG - iCCP profile name b'ICC profile'
+2025-02-03 10:15:03,703 - DEBUG - Compression method 0
+2025-02-03 10:15:03,705 - DEBUG - STREAM b'bKGD' 442 6
+2025-02-03 10:15:03,705 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-02-03 10:15:03,705 - DEBUG - STREAM b'pHYs' 460 9
+2025-02-03 10:15:03,705 - DEBUG - STREAM b'tIME' 481 7
+2025-02-03 10:15:03,705 - DEBUG - b'tIME' 481 7 (unknown)
+2025-02-03 10:15:03,705 - DEBUG - STREAM b'tEXt' 500 25
+2025-02-03 10:15:03,705 - DEBUG - STREAM b'IDAT' 537 8192
+2025-02-03 10:15:04,169 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.168:5000
+2025-02-03 10:15:04,169 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-03 10:26:43,280 - DEBUG - STREAM b'IHDR' 16 13
+2025-02-03 10:26:43,280 - DEBUG - STREAM b'iCCP' 41 389
+2025-02-03 10:26:43,280 - DEBUG - iCCP profile name b'ICC profile'
+2025-02-03 10:26:43,281 - DEBUG - Compression method 0
+2025-02-03 10:26:43,281 - DEBUG - STREAM b'bKGD' 442 6
+2025-02-03 10:26:43,281 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-02-03 10:26:43,283 - DEBUG - STREAM b'pHYs' 460 9
+2025-02-03 10:26:43,283 - DEBUG - STREAM b'tIME' 481 7
+2025-02-03 10:26:43,283 - DEBUG - b'tIME' 481 7 (unknown)
+2025-02-03 10:26:43,283 - DEBUG - STREAM b'tEXt' 500 25
+2025-02-03 10:26:43,283 - DEBUG - STREAM b'IDAT' 537 8192
+2025-02-03 10:26:43,582 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.168:5000
+2025-02-03 10:26:43,583 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-03 10:26:45,049 - INFO - 192.168.0.175 - - [03/Feb/2025 10:26:45] "GET /socket.io/?EIO=4&transport=polling&t=PJB8YZj HTTP/1.1" 200 -
+2025-02-03 10:26:45,194 - INFO - 192.168.0.175 - - [03/Feb/2025 10:26:45] "POST /socket.io/?EIO=4&transport=polling&t=PJB8ZKP&sid=2ey1PdBGuSW_CMPoAAAA HTTP/1.1" 200 -
+2025-02-03 10:26:45,195 - INFO - 192.168.0.175 - - [03/Feb/2025 10:26:45] "GET /socket.io/?EIO=4&transport=polling&t=PJB8ZKR&sid=2ey1PdBGuSW_CMPoAAAA HTTP/1.1" 200 -
+2025-02-03 10:31:02,148 - DEBUG - STREAM b'IHDR' 16 13
+2025-02-03 10:31:02,148 - DEBUG - STREAM b'iCCP' 41 389
+2025-02-03 10:31:02,148 - DEBUG - iCCP profile name b'ICC profile'
+2025-02-03 10:31:02,150 - DEBUG - Compression method 0
+2025-02-03 10:31:02,150 - DEBUG - STREAM b'bKGD' 442 6
+2025-02-03 10:31:02,150 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-02-03 10:31:02,150 - DEBUG - STREAM b'pHYs' 460 9
+2025-02-03 10:31:02,150 - DEBUG - STREAM b'tIME' 481 7
+2025-02-03 10:31:02,150 - DEBUG - b'tIME' 481 7 (unknown)
+2025-02-03 10:31:02,150 - DEBUG - STREAM b'tEXt' 500 25
+2025-02-03 10:31:02,150 - DEBUG - STREAM b'IDAT' 537 8192
+2025-02-03 10:31:02,752 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.168:5000
+2025-02-03 10:31:02,752 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-03 10:31:03,267 - INFO - 192.168.0.175 - - [03/Feb/2025 10:31:03] "GET /socket.io/?EIO=4&transport=polling&t=PJB9YLK HTTP/1.1" 200 -
+2025-02-03 10:31:03,464 - INFO - 192.168.0.175 - - [03/Feb/2025 10:31:03] "GET /socket.io/?EIO=4&transport=polling&t=PJB9YMi&sid=DPQNM_YYjV5-qi7cAAAA HTTP/1.1" 200 -
+2025-02-03 10:31:03,472 - INFO - 192.168.0.175 - - [03/Feb/2025 10:31:03] "POST /socket.io/?EIO=4&transport=polling&t=PJB9YMg&sid=DPQNM_YYjV5-qi7cAAAA HTTP/1.1" 200 -
+2025-02-03 10:31:03,850 - INFO - 192.168.0.175 - - [03/Feb/2025 10:31:03] "GET /socket.io/?EIO=4&transport=polling&t=PJB9YPt&sid=DPQNM_YYjV5-qi7cAAAA HTTP/1.1" 200 -
+2025-02-03 11:12:56,949 - DEBUG - STREAM b'IHDR' 16 13
+2025-02-03 11:12:56,951 - DEBUG - STREAM b'iCCP' 41 389
+2025-02-03 11:12:56,951 - DEBUG - iCCP profile name b'ICC profile'
+2025-02-03 11:12:56,951 - DEBUG - Compression method 0
+2025-02-03 11:12:56,952 - DEBUG - STREAM b'bKGD' 442 6
+2025-02-03 11:12:56,952 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-02-03 11:12:56,952 - DEBUG - STREAM b'pHYs' 460 9
+2025-02-03 11:12:56,952 - DEBUG - STREAM b'tIME' 481 7
+2025-02-03 11:12:56,952 - DEBUG - b'tIME' 481 7 (unknown)
+2025-02-03 11:12:56,953 - DEBUG - STREAM b'tEXt' 500 25
+2025-02-03 11:12:56,953 - DEBUG - STREAM b'IDAT' 537 8192
+2025-02-03 11:12:57,328 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:443
+ * Running on http://192.168.0.168:443
+2025-02-03 11:12:57,328 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-03 11:13:07,288 - INFO - 192.168.0.175 - - [03/Feb/2025 11:13:07] "GET / HTTP/1.1" 200 -
+2025-02-03 11:13:08,321 - INFO - 192.168.0.175 - - [03/Feb/2025 11:13:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-03 11:13:13,620 - INFO - 192.168.0.175 - - [03/Feb/2025 11:13:13] "GET / HTTP/1.1" 200 -
+2025-02-03 11:16:07,386 - DEBUG - STREAM b'IHDR' 16 13
+2025-02-03 11:16:07,387 - DEBUG - STREAM b'iCCP' 41 389
+2025-02-03 11:16:07,387 - DEBUG - iCCP profile name b'ICC profile'
+2025-02-03 11:16:07,388 - DEBUG - Compression method 0
+2025-02-03 11:16:07,388 - DEBUG - STREAM b'bKGD' 442 6
+2025-02-03 11:16:07,388 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-02-03 11:16:07,388 - DEBUG - STREAM b'pHYs' 460 9
+2025-02-03 11:16:07,389 - DEBUG - STREAM b'tIME' 481 7
+2025-02-03 11:16:07,389 - DEBUG - b'tIME' 481 7 (unknown)
+2025-02-03 11:16:07,389 - DEBUG - STREAM b'tEXt' 500 25
+2025-02-03 11:16:07,389 - DEBUG - STREAM b'IDAT' 537 8192
+2025-03-09 01:44:29,871 - DEBUG - STREAM b'IHDR' 16 13
+2025-03-09 01:44:29,872 - DEBUG - STREAM b'iCCP' 41 389
+2025-03-09 01:44:29,872 - DEBUG - iCCP profile name b'ICC profile'
+2025-03-09 01:44:29,873 - DEBUG - Compression method 0
+2025-03-09 01:44:29,874 - DEBUG - STREAM b'bKGD' 442 6
+2025-03-09 01:44:29,875 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-03-09 01:44:29,875 - DEBUG - STREAM b'pHYs' 460 9
+2025-03-09 01:44:29,875 - DEBUG - STREAM b'tIME' 481 7
+2025-03-09 01:44:29,875 - DEBUG - b'tIME' 481 7 (unknown)
+2025-03-09 01:44:29,875 - DEBUG - STREAM b'tEXt' 500 25
+2025-03-09 01:44:29,875 - DEBUG - STREAM b'IDAT' 537 8192
+2025-03-09 01:44:30,889 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.210:5000
+2025-03-09 01:44:30,889 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 01:44:56,033 - DEBUG - STREAM b'IHDR' 16 13
+2025-03-09 01:44:56,034 - DEBUG - STREAM b'iCCP' 41 389
+2025-03-09 01:44:56,034 - DEBUG - iCCP profile name b'ICC profile'
+2025-03-09 01:44:56,035 - DEBUG - Compression method 0
+2025-03-09 01:44:56,035 - DEBUG - STREAM b'bKGD' 442 6
+2025-03-09 01:44:56,035 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-03-09 01:44:56,035 - DEBUG - STREAM b'pHYs' 460 9
+2025-03-09 01:44:56,035 - DEBUG - STREAM b'tIME' 481 7
+2025-03-09 01:44:56,036 - DEBUG - b'tIME' 481 7 (unknown)
+2025-03-09 01:44:56,036 - DEBUG - STREAM b'tEXt' 500 25
+2025-03-09 01:44:56,036 - DEBUG - STREAM b'IDAT' 537 8192
+2025-03-09 01:44:57,030 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.210:5000
+2025-03-09 01:44:57,031 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 01:45:08,914 - DEBUG - STREAM b'IHDR' 16 13
+2025-03-09 01:45:08,915 - DEBUG - STREAM b'iCCP' 41 389
+2025-03-09 01:45:08,915 - DEBUG - iCCP profile name b'ICC profile'
+2025-03-09 01:45:08,916 - DEBUG - Compression method 0
+2025-03-09 01:45:08,916 - DEBUG - STREAM b'bKGD' 442 6
+2025-03-09 01:45:08,916 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-03-09 01:45:08,917 - DEBUG - STREAM b'pHYs' 460 9
+2025-03-09 01:45:08,917 - DEBUG - STREAM b'tIME' 481 7
+2025-03-09 01:45:08,917 - DEBUG - b'tIME' 481 7 (unknown)
+2025-03-09 01:45:08,917 - DEBUG - STREAM b'tEXt' 500 25
+2025-03-09 01:45:08,918 - DEBUG - STREAM b'IDAT' 537 8192
+2025-03-09 01:45:09,507 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.210:5000
+2025-03-09 01:45:09,508 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-09 01:46:54,607 - DEBUG - STREAM b'IHDR' 16 13
+2025-03-09 01:46:54,608 - DEBUG - STREAM b'iCCP' 41 389
+2025-03-09 01:46:54,608 - DEBUG - iCCP profile name b'ICC profile'
+2025-03-09 01:46:54,609 - DEBUG - Compression method 0
+2025-03-09 01:46:54,609 - DEBUG - STREAM b'bKGD' 442 6
+2025-03-09 01:46:54,609 - DEBUG - b'bKGD' 442 6 (unknown)
+2025-03-09 01:46:54,610 - DEBUG - STREAM b'pHYs' 460 9
+2025-03-09 01:46:54,610 - DEBUG - STREAM b'tIME' 481 7
+2025-03-09 01:46:54,610 - DEBUG - b'tIME' 481 7 (unknown)
+2025-03-09 01:46:54,611 - DEBUG - STREAM b'tEXt' 500 25
+2025-03-09 01:46:54,611 - DEBUG - STREAM b'IDAT' 537 8192
+2025-03-09 01:46:55,077 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.210:5000
+2025-03-09 01:46:55,077 - INFO - [33mPress CTRL+C to quit[0m
