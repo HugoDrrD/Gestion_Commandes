@@ -56,7 +56,7 @@ class QuantityDialog(simpledialog.Dialog):
 class DatabaseManagerWindow:
     def __init__(self, app, db_connection):
         # Changed parent to app to get access to the main application instance
-        self.app = app  # Store main app reference instead of just the window
+        self.app = app  
         self.window = Toplevel(app.root)
         self.window.title("Base de données")
         self.window.geometry("800x600")
@@ -138,7 +138,6 @@ class DatabaseManagerWindow:
         dialog = ItemDialog(self.window, "Ajouter un élément")
         if dialog.result:
             try:
-                # Update SQL statement to include marque
                 self.cursor.execute(
                     "INSERT INTO F1 (id, description, type, prix, marque) VALUES (?, ?, ?, ?, ?)",
                     (
@@ -183,9 +182,8 @@ class DatabaseManagerWindow:
             return
     
         try:
-            # Use selected_item instead of selected
             item = self.tree.item(selected_item[0])
-            item_id = item['values'][0]  # ID is in first column
+            item_id = item['values'][0]  
             
             # Check if item is in cart
             if str(item_id) in self.app.panier:
@@ -346,8 +344,7 @@ class GestionCommandes:
         self.setup_database()
         self.setup_flask()
         
-        # Add icon setup before creating GUI
-        self.icon_path = 'Logo_DN.ico'  # Ensure this path is correct
+        self.icon_path = 'Logo_DN.ico'
         self.setup_icon()
         
         self.create_gui()
@@ -452,7 +449,6 @@ class GestionCommandes:
             current_dir = os.path.dirname(os.path.abspath(__file__))
             icon_path = os.path.join(current_dir, "Logo_DN.png")
             if os.path.exists(icon_path):
-                # Try PhotoImage method if iconbitmap fails
                 icon = tk.PhotoImage(file=icon_path)
                 self.root.iconphoto(True, icon)
                 self.root.tk.call('wm', 'iconphoto', self.root._w, icon)
@@ -471,25 +467,23 @@ class GestionCommandes:
         self.setup_styles()
         self.setup_gui_elements()
         self.setup_grid_layout()
-        # Call search to populate initial data
         self.search()
         
-        # Add right-click binding for quantity modification
         self.treeview_panier.bind('<Button-3>', self.show_context_menu)
 
     def setup_styles(self):
         style = ttk.Style()
-        # Configure theme
+        # theme
         style.theme_use('clam')
         
-        # Configure font rendering
+        # font rendering
         font_config = {
             'family': 'Segoe UI',
             'size': 10,
             'weight': 'normal'
         }
         
-        # Configure Treeview
+        # Treeview
         style.configure("Treeview",
             background="white",
             fieldbackground="white",
@@ -504,7 +498,7 @@ class GestionCommandes:
             font=(font_config['family'], font_config['size'], 'bold')
         )
         
-        # Configure Buttons
+        # Buttons
         style.configure("TButton", 
             padding=6,
             background="#0d6efd",
@@ -515,7 +509,7 @@ class GestionCommandes:
             foreground=[('active', 'black'), ('!active', 'black')]
         )
         
-        # Configure Entry and Label
+        # Entry and Label
         style.configure("TEntry",
             padding=6,
             fieldbackground="white",
@@ -537,7 +531,7 @@ class GestionCommandes:
         # Results list with custom style
         self.listbox_resultats = tk.Listbox(
             self.root, 
-            width=100,  # Increased width
+            width=100,  
             height=10,
             bg='white',
             selectmode='single',
@@ -562,11 +556,11 @@ class GestionCommandes:
             style="Treeview"
         )
         
-        # Configure columns
+        # columns
         for col in columns:
             self.treeview_panier.heading(col, text=col)
         
-        # Configure column widths
+        # column widths
         self.treeview_panier.column("Désignation", width=400)
         self.treeview_panier.column("Références", width=100)
         self.treeview_panier.column("Marque", width=100)
@@ -578,20 +572,19 @@ class GestionCommandes:
         for child in self.root.winfo_children():
             child.grid_configure(padx=20, pady=5)
         
-        # Modifier le binding du treeview_panier pour utiliser le double-clic
         self.treeview_panier.bind('<Double-Button-1>', self.show_context_menu)
 
     def setup_grid_layout(self):
-        # Configure grid
+        # grid
         for i in range(3):
             self.root.grid_columnconfigure(i, weight=1)
 
-        # Configure grid weights
+        # grid weights
         self.root.grid_columnconfigure(0, weight=1)
         self.root.grid_rowconfigure(4, weight=1)  # Make the listbox row expandable
         self.root.grid_rowconfigure(5, weight=1)  # Make the treeview row expandable
 
-        # Layout elements - removing type search
+        # Layout elements
         ttk.Label(self.root, text="Rechercher :").grid(row=0, column=0, sticky='w', padx=5)
         self.entry_valeur.grid(row=1, column=0, columnspan=3, sticky='ew', padx=5)
         
@@ -609,7 +602,7 @@ class GestionCommandes:
         try:
             with open('panier.json', 'r') as f:
                 content = f.read()
-                if content.strip():  # Check if file is not empty
+                if content.strip():
                     self.panier = json.loads(content)
                 else:
                     self.panier = {}
@@ -678,8 +671,7 @@ class GestionCommandes:
             return
 
         id_produit = str(element[0])
-        # Include all 5 columns from database including marque
-        element_data = list(element)  # This captures all fields including marque
+        element_data = list(element)  
         
         if id_produit in self.panier:
             self.panier[id_produit]['quantite'] += quantity
@@ -687,7 +679,6 @@ class GestionCommandes:
             self.panier[id_produit] = {'element': element_data, 'quantite': quantity}
         
         self.save_cart()
-        # Corriger l'émission socketio
         self.socketio.emit('panier_update', self.panier, room=None)
         self.update_cart_display()
 
@@ -785,7 +776,6 @@ class GestionCommandes:
     def reset_cart(self):
         self.panier = {}
         self.save_cart()
-        # Corriger l'émission socketio
         self.socketio.emit('panier_update', self.panier, room=None)
         self.update_cart_display()
 
@@ -811,7 +801,7 @@ class GestionCommandes:
         qr.make(fit=True)
         
         window = Toplevel(self.root)
-        window.title("")  # Empty title
+        window.title("")
         window.geometry("300x300")
         
         img_tk = ImageTk.PhotoImage(qr.make_image(fill='black', back_color='white'))
@@ -826,7 +816,7 @@ class GestionCommandes:
         def run_flask():
             self.socketio.run(
                 self.app,
-                host='0.0.0.0',  # Écoute sur toutes les interfaces
+                host='0.0.0.0',
                 port=5000,
                 debug=False,
                 use_reloader=False,
@@ -851,4 +841,4 @@ if __name__ == '__main__':
         logging.error(traceback.format_exc())
         print(f"An error occurred: {str(e)}")
         print("See app.log for details")
-        input("Press Enter to exit...")  # Prevent console from closing
+        input("Press Enter to exit...")
